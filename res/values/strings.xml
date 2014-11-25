@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calculadora de Expresiones Lógicas</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="escribir">Digite su expresión</string>
+    
+    <string name="terminado">Terminado</string>
+    <string name="postfijo">Imprimir Postfijo</string>
+    <string name="doble">⇔</string>
+    <string name="prefijo">Imprimir Prefijo</string>
+    <string name="ayuda">Ayuda</string>
+    <string name="acerca">Acerca de</string>
+    <string name="p">p</string>
+    <string name="or">v</string>
+    <string name="and">^</string>
+    <string name="q">q</string>
+    <string name="r">r</string>
+    <string name="nega">~</string>
+    <string name="cerrar">)</string>
+    <string name="abrir">(</string>
+    <string name="evaluar">Evaluar la Expresión</string>
+    <string name="resultado">Aquí verá el resultado</string>
+    <string name="resultadologico">Aquí verá el resultado lógico</string>
+    <string name="borrartodo">Borrar Todo</string>
+    <string name="borrar">Borrar</string>
+    <string name="impli">→</string>
+    <string name="vers">Versión 2.0</string>
+
+    
+    <string name="acercade">Esta aplicación ha sido desarrollada por Holman Calderón y Juan Pablo Ariza por motivos académicos y desparche.</string>
+	 <string name="acercadelayout">Información acerca de la aplicación</string>
+    <string name="correos">halecalderon@gmail.com</string>
+	<string name="app"> Una simple calculadora de Expresiones Lógicas, útil para matematicas discretas.</string>
+</resources>

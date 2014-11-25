@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="holman">30dip</dimen>
+     <dimen name="hpequeña">24dip</dimen>
+    <dimen name="Grande">45dip</dimen>
+</resources>

@@ -1,0 +1,237 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".CalculadoradeExpresionesLogicas">
+
+
+    <LinearLayout
+            android:gravity="top"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="430dp">
+    <TextView
+            android:id="@+id/pantalla"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:clickable="false"
+
+
+            android:ems="10"
+            android:freezesText="true"
+
+            android:hint="@string/escribir"
+            android:maxLines="@integer/unalinea"
+
+            android:textSize="100dp"
+            android:textStyle="bold|normal"
+            android:gravity="center_vertical|center_horizontal" android:textAlignment="center"
+            android:autoText="false" android:singleLine="false"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:orientation="horizontal"
+
+            >
+
+            <LinearLayout
+            android:layout_width="120dp"
+            android:orientation="vertical"
+            android:layout_height="match_parent"
+
+                    >
+
+                <CheckBox
+                        android:id="@+id/valorp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+
+                        android:layout_gravity="center_horizontal|center_vertical"
+
+                        android:checked="true"
+                        />
+                <Button
+                        android:id="@+id/botonp"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+
+                        android:onClick="sumarp"
+                        android:text="@string/p"
+                        android:textSize="@dimen/Grande" />
+                <Button
+                        android:id="@+id/abrir"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:onClick="sumarabrir"
+                        android:text="@string/abrir"
+                        android:textSize="@dimen/Grande" />
+                <Button
+                        android:id="@+id/implica"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+
+                        android:onClick="sumarimpli"
+                        android:text="@string/impli"
+                        android:textSize="@dimen/Grande" />
+
+                <Button
+                        android:id="@+id/or"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:onClick="sumaror"
+                        android:text="@string/or"
+                        android:textSize="@dimen/Grande" />
+
+
+            </LinearLayout>
+
+
+             <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                 <CheckBox
+                         android:id="@+id/valorq"
+                         android:layout_width="wrap_content"
+                         android:layout_height="33dp"
+                         android:onClick="mostrarCambioDeValor"
+                         android:layout_gravity="center_horizontal|center_vertical"
+
+                         android:checked="true"
+                         />
+
+                 <Button
+                         android:id="@+id/botonq"
+                         android:layout_width="match_parent"
+                         android:layout_height="100px"
+
+                         android:onClick="sumarq"
+                         android:text="@string/q"
+                         android:textSize="@dimen/Grande" />
+
+
+                 <Button
+                         android:id="@+id/nega"
+                         android:layout_width="match_parent"
+                         android:layout_height="100px"
+
+                         android:onClick="sumarnega"
+                         android:text="@string/nega"
+                         android:textSize="@dimen/Grande" />
+
+
+             </LinearLayout>
+             <LinearLayout
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                 <CheckBox
+                         android:id="@+id/valorr"
+                         android:layout_width="wrap_content"
+                         android:layout_height="33dp"
+                         android:onClick="mostrarCambioDeValor"
+                         android:layout_gravity="center_horizontal|center_vertical"
+
+                         android:checked="true"
+                         />
+
+                 <Button
+                         android:id="@+id/botonr"
+                         android:layout_width="match_parent"
+                         android:layout_height="100px"
+
+                         android:onClick="sumarr"
+                         android:text="@string/r"
+                         android:textSize="@dimen/Grande" />
+
+                 <Button
+                         android:id="@+id/cerrar"
+                         android:layout_width="match_parent"
+                         android:layout_height="100px"
+
+
+                         android:onClick="sumarcerrar"
+                         android:text="@string/cerrar"
+                         android:textSize="@dimen/Grande" />
+                 <Button
+                         android:id="@+id/doble"
+                         android:layout_width="match_parent"
+                         android:layout_height="100px"
+
+
+                         android:onClick="sumardoble"
+                         android:text="@string/doble"
+                         android:textSize="@dimen/Grande" />
+
+                 <Button
+                         android:id="@+id/and"
+                         android:layout_width="match_parent"
+                         android:layout_height="100px"
+
+                         android:onClick="sumarand"
+                         android:text="@string/and"
+                         android:textSize="@dimen/Grande" android:gravity="center_horizontal|bottom"/>
+
+
+               </LinearLayout>
+
+
+            <LinearLayout
+                    android:layout_width="240dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                >
+
+                <Button
+                        android:id="@+id/terminado"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+                        android:layout_marginTop="33dp"
+
+
+                        android:onClick="guardar"
+                        android:text="@string/terminado"
+                        android:textSize="40dp" />
+
+                <Button
+                        android:id="@+id/borrar"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+
+
+                        android:onClick="borrar"
+                        android:text="@string/borrar"
+                        android:textSize="40dp" />
+
+                <Button
+                        android:id="@+id/borrartodo"
+                        android:layout_width="match_parent"
+                        android:layout_height="100px"
+
+
+                        android:onClick="borrartodo"
+                        android:text="@string/borrartodo"
+                        android:textSize="38dp" />
+
+
+
+                </LinearLayout>
+
+
+
+
+       </LinearLayout>
+
+
+</LinearLayout>
